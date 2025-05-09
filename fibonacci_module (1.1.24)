@@ -1,0 +1,12 @@
+def generate_fibonacci_sequence(n):
+  fib = []
+  fib1, fib2 = 0, 1
+
+  for _ in range(n):
+    fib.append(str(fib1))
+    fib1, fib2 = fib2, fib1 + fib2
+
+  print(' '.join(fib) + ' ')
+
+if __name__ == "__main__":
+  print("<> Running the module as a script! <>")
