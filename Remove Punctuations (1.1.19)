@@ -1,0 +1,7 @@
+import string
+
+str = input()
+remove = str.maketrans('', '', string.punctuation)
+
+nopunct = str.translate(remove)
+print(nopunct)
