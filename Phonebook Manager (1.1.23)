@@ -1,0 +1,33 @@
+phonebook = dict()
+
+def addcontact(phonebook):
+    name = input("Name: ")
+    phone = input("Phone number: ")
+    phonebook[name] = phone
+    
+def removecontact(phonebook):
+    name = input("Name: ")
+    if (name in phonebook):
+        del phonebook[name]
+    else:
+    print("Not found")
+    
+def display(phonebook):
+    print(phonebook)
+    
+while True:
+    print("1. Add Contact")
+    print("2. Remove Contact")
+    print("3. Display")
+    print("4. Quit")
+    choice = int(input("Enter choice (1-4): "))
+    if (choice == 1):
+        addcontact(phonebook)
+    elif (choice == 2):
+        removecontact(phonebook)
+    elif (choice == 3):
+        display(phonebook)
+    elif (choice == 4):
+        break
+    else:
+        print("Invalid")
