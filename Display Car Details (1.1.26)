@@ -38,13 +38,13 @@ car1_brand, car1_price, car1_model, car1_color = get_car_details()
 
 Car1 = Car1(car1_brand, car1_price, car1_model, car1_color)
 
-
 print("Details for Car 2:")
-car2_brand, car2_price, car2_model,
-car2_color = get_car_details()
-Car2 = Car2(car2_brand, car2_price
-,car2_model, car2_color)
+car2_brand, car2_price, car2_model, car2_color = get_car_details()
+
+Car2 = Car2(car2_brand, car2_price ,car2_model, car2_color)
+
 print("Car 1 Details:")
 Car1.display_details()
+
 print("Car 2 Details:")
 Car2.display_details()
